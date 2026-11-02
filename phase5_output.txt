@@ -1,0 +1,277 @@
+========================================
+       PHASE 5 FILE I/O & REPORT TEST
+========================================
+
+
+>>> TEST 1: MISSION REPORT <<<
+Performing pre-launch checks...
+
+Fuel.................... OK
+Oxygen.................. OK
+Hull.................... OK
+Crew.................... OK
+Destination............. OK
+
+PRE-LAUNCH CHECK: PASSED
+
+========================================
+         MISSION LAUNCH
+========================================
+
+ALL SYSTEMS GO!
+
+T-3
+T-2
+T-1
+
+LIFTOFF!
+
+Mission launched successfully.
+
+========================================
+        SPACE TRAVEL
+========================================
+
+Stage 1 / 4
+Leaving Earth orbit...
+
+Pilot navigation efficiency reduced fuel consumption.
+Fuel consumed: 800
+Oxygen consumed: 1000
+
+A space event has occurred...
+
+⚠ ASTEROID FIELD DETECTED!
+The spacecraft has encountered a dangerous asteroid field.
+Evasive maneuvers initiated...
+Fuel consumed during evasion: 40
+Hull damaged by 10 points.
+Pilot Aman correcting navigation...
+Course stabilized, minimizing further risk.
+
+--- Basic Report ---
+
+==================================================
+              SPACE MISSION REPORT
+==================================================
+
+Mission Name       : Operation Red Horizon
+Destination        : Mars
+Final State        : IN SPACE
+
+--------------------------------------------------
+SPACECRAFT
+--------------------------------------------------
+
+Fuel Remaining     : 9160
+Oxygen Remaining   : 9000
+Hull Integrity     : 90%
+
+--------------------------------------------------
+CREW
+--------------------------------------------------
+
+Commander Rahul    : Healthy
+Pilot Aman    : Healthy
+Scientist Rohit    : Healthy
+Engineer Karan    : Healthy
+
+--------------------------------------------------
+EVENTS ENCOUNTERED
+--------------------------------------------------
+
+1. Asteroid Field - Severity 2
+
+--------------------------------------------------
+
+Mission Status: IN SPACE
+
+==================================================
+
+--- Detailed Report ---
+
+==================================================
+          DETAILED SPACE MISSION REPORT
+==================================================
+
+Mission Name       : Operation Red Horizon
+Destination        : Mars
+Final State        : IN SPACE
+Stages Completed   : 1 / 4
+
+--------------------------------------------------
+SPACECRAFT DETAILED STATUS
+--------------------------------------------------
+
+Fuel Remaining     : 9160
+Oxygen Remaining   : 9000
+Hull Integrity     : 90%
+
+--------------------------------------------------
+CREW DETAILED STATUS
+--------------------------------------------------
+
+Commander Rahul    : Health 100
+Pilot Aman    : Health 100
+Scientist Rohit    : Health 100
+Engineer Karan    : Health 100
+
+--------------------------------------------------
+DETAILED EVENT HISTORY
+--------------------------------------------------
+
+1. Asteroid Field - Severity 2
+
+--------------------------------------------------
+
+Mission Conclusion : IN SPACE
+
+==================================================
+
+>>> TEST 2: SAVE MISSION <<<
+Performing pre-launch checks...
+
+Fuel.................... OK
+Oxygen.................. OK
+Hull.................... OK
+Crew.................... OK
+Destination............. OK
+
+PRE-LAUNCH CHECK: PASSED
+
+========================================
+         MISSION LAUNCH
+========================================
+
+ALL SYSTEMS GO!
+
+T-3
+T-2
+T-1
+
+LIFTOFF!
+
+Mission launched successfully.
+
+========================================
+        SPACE TRAVEL
+========================================
+
+Stage 1 / 4
+Leaving Earth orbit...
+
+Pilot navigation efficiency reduced fuel consumption.
+Fuel consumed: 800
+Oxygen consumed: 1000
+
+A space event has occurred...
+
+⚠ ASTEROID FIELD DETECTED!
+The spacecraft has encountered a dangerous asteroid field.
+Evasive maneuvers initiated...
+Fuel consumed during evasion: 40
+Hull damaged by 10 points.
+Pilot Aman correcting navigation...
+Course stabilized, minimizing further risk.
+Mission saved successfully to data/mission_save.txt
+
+>>> TEST 3: LOAD MISSION <<<
+Mission loaded successfully from data/mission_save.txt
+
+--- Loaded Mission Details ---
+Mission: Save Operation
+Destination: Mars | Distance: 2.25e+08 | Required Fuel: 4000 | Difficulty: 8
+Spacecraft [Apollo-SaveTest] Status:
+  Fuel: 9160
+  Oxygen: 9000
+  Hull Integrity: 90%
+Crew Roster:
+ - Commander Rahul (Health: 100)
+ - Pilot Aman (Health: 100)
+ - Scientist Rohit (Health: 100)
+ - Engineer Karan (Health: 100)
+State: IN SPACE
+Current Stage: 1 / 4
+
+>>> TEST 4: CONTINUE LOADED MISSION <<<
+Continuing mission from loaded state...
+
+========================================
+        SPACE TRAVEL
+========================================
+
+Stage 2 / 4
+Entering deep space...
+
+Pilot navigation efficiency reduced fuel consumption.
+Fuel consumed: 800
+Oxygen consumed: 1000
+
+A space event has occurred...
+
+⚠ SOLAR STORM DETECTED!
+Radiation levels increasing! Spacecraft systems affected.
+Hull integrity reduced by 10 points due to radiation bursts.
+Scientist Rohit analyzing anomaly...
+Data collected successfully, shielding optimized.
+Crew member Aman was injured during the event!
+
+========================================
+        SPACE TRAVEL
+========================================
+
+Stage 3 / 4
+Entering deep space...
+
+Pilot navigation efficiency reduced fuel consumption.
+Fuel consumed: 800
+Oxygen consumed: 1000
+
+Travel continued normally.
+
+========================================
+        SPACE TRAVEL
+========================================
+
+Stage 4 / 4
+Destination Approach...
+
+Pilot navigation efficiency reduced fuel consumption.
+Fuel consumed: 800
+Oxygen consumed: 1000
+
+A space event has occurred...
+
+⚠ OXYGEN LEAK DETECTED!
+Emergency oxygen systems activated.
+Oxygen reduced by 45 units.
+Engineer Karan responding to oxygen leak...
+Emergency system repaired by Engineer.
+Crew member Karan was injured during the event!
+
+========================================
+       DESTINATION REACHED
+========================================
+
+Mission: Save Operation
+Destination: Mars
+
+The spacecraft has successfully reached
+its destination.
+
+MISSION COMPLETED!
+
+Final State after continuing: COMPLETED
+
+>>> TEST 5: INVALID FILE LOAD <<<
+Caught invalid file load properly.
+
+>>> TEST 6: MISSING FILE LOAD <<<
+Caught missing file correctly.
+
+>>> TEST 7: STATIC SAVE COUNTER <<<
+Total successful save operations: 2
+
+========================================
+PHASE 5 TEST COMPLETE
+========================================
